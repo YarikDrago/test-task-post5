@@ -1,0 +1,29 @@
+.navbar-profile-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 10px;
+    /*background-color: #34a559;*/
+    /*justify-content: center;*/
+}
+.offcanvas{
+    height: auto;
+}
+
+#offcanvasNavbar{
+    width: 256px;
+}
+
+.offcanvas-body{
+    padding: 0;
+    width: 256px;
+}
+
+.offcanvas-body ul {
+    padding: 0;
+}
+
+.navbar-nav{
+    padding: 0;
+}

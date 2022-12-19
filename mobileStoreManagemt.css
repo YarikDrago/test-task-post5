@@ -1,0 +1,50 @@
+.mobile-store-management{
+    display: none;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100vw;
+    height: 200px;
+    /*background-color: #d5df15;*/
+    padding: 0 7px;
+}
+
+.mobile-store-management-schedule{
+    list-style: none;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.mobile-store-management-element{
+    width: 100%;
+    padding-left: 5px;
+    /*background-color: #e1ffea;*/
+    border-bottom: 1px solid #b1b1b1;
+}
+
+.mobile-store-management-element-line{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.mobile-store-management-element-title{
+    display: inline;
+    font-size: 14px;
+    font-weight: 900;
+    margin: 0;
+    color: #343434;
+}
+
+.mobile-store-management-element-value{
+    display: inline;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+    color: #6e6e6e;
+}
+
+@media screen and (max-width: 700px){
+    .mobile-store-management{
+        display: flex;
+    }
+}

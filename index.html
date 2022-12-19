@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work5 Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="tableStyle.css">
+    <link rel="stylesheet" href="modalStyle.css">
+    <link rel="stylesheet" href="navbarProfile.css">
+    <link rel="stylesheet" href="mobileStoreManagemt.css">
+</head>
+<body style="background-color: #f8faff">
+    <main class="main-grid">
+<!--        side menu-->
+        <div class="menu">
+            <a href="https://www.work5.ru">
+                <img class="logo-img" src="./images/work5_logo.png" alt="logo">
+            </a>
+            <ul class="menu-list">
+                <li class="menu-list-item">
+                    <div class="menu-list-item-icon-container">
+                        <img class='menu-list-item-icon-unselected' src="./images/icon-web-page-home-grey.png" alt="main-page">
+                        <img class='menu-list-item-icon-active' src="./images/icon-web-page-home-blue.png" alt="main-page">
+                    </div>
+                    <p>Главная</p>
+                </li>
+                <li class="menu-list-item active">
+                    <div class="menu-list-item-icon-container">
+                        <img class='menu-list-item-icon-unselected' src="./images/icon-shopping-cart-grey.png" alt="main-page">
+                        <img class='menu-list-item-icon-active' src="./images/icon-shopping-cart-blue.png" alt="main-page">
+                    </div>
+                    <p>Мои магазины</p>
+                </li>
+                <li class="menu-list-item">
+                    <div class="menu-list-item-icon-container">
+                        <img class='menu-list-item-icon-unselected' src="./images/icon-megaphone-grey.png" alt="main-page">
+                        <img class='menu-list-item-icon-active' src="./images/icon-megaphone-blue.png" alt="main-page">
+                    </div>
+                    <p>Промоматериалы</p>
+                </li>
+                <li class="menu-list-item">
+                    <div class="menu-list-item-icon-container">
+                        <img class='menu-list-item-icon-unselected' src="./images/icon-pie-chart-grey.png" alt="main-page">
+                        <img class='menu-list-item-icon-active' src="./images/icon-pie-chart-blue.png" alt="main-page">
+                    </div>
+                    <p>Статистика</p>
+                </li>
+                <li class="menu-list-item">
+                    <div class="menu-list-item-icon-container">
+                        <img class='menu-list-item-icon-unselected' src="./images/icon-wallet-grey.png" alt="main-page">
+                        <img class='menu-list-item-icon-active' src="./images/icon-wallet-blue.png" alt="main-page">
+                    </div>
+                    <p>Баланс</p>
+                </li>
+                <li class="menu-list-item">
+                    <div class="menu-list-item-icon-container">
+                        <img class='menu-list-item-icon-unselected' src="./images/icon-profile-grey.png" alt="main-page">
+                        <img class='menu-list-item-icon-active' src="./images/icon-profile-blue.png" alt="main-page">
+                    </div>
+                    <p>Персональные данные</p>
+                </li>
+                <li class="menu-list-item">
+                    <div class="menu-list-item-icon-container">
+                        <img class='menu-list-item-icon-unselected' src="./images/icon-information-grey.png" alt="main-page">
+                        <img class='menu-list-item-icon-active' src="./images/icon-information-blue.png" alt="main-page">
+                    </div>
+                    <p>FAQ</p>
+                </li>
+                <li class="menu-list-item">
+                    <div class="menu-list-item-icon-container">
+                        <img class='menu-list-item-icon-unselected' src="./images/icon-music-and-multimedia-grey.png" alt="main-page">
+                        <img class='menu-list-item-icon-active' src="./images/icon-music-and-multimedia-blue.png" alt="main-page">
+                    </div>
+                    <p>Техподдержка</p>
+                </li>
+                <li class="menu-list-item">
+                    <div class="menu-list-item-icon-container">
+                        <img class='menu-list-item-icon-unselected' src="./images/icon-logout-grey.png" alt="main-page">
+                        <img class='menu-list-item-icon-active' src="./images/icon-logout-blue.png" alt="main-page">
+                    </div>
+                    <p>Выход</p>
+                </li>
+            </ul>
+            <nav class="navbar bg-light fixed-top">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="https://www.work5.ru">
+                        <img class="navbar-logo-img" src="./images/work5_logo.png" alt="logo">
+                    </a>
+                    <div class="navbar-profile-block">
+                        <button type="button" class="header-btn">
+                            <div class="header-btn-mail-container">
+                                <img class="header-btn-mail-img-unselected" src="./images/icon-mail-grey.png" alt="mail">
+                                <img class="header-btn-mail-img-active" src="./images/icon-mail-grey.png" alt="mail">
+                                <div class="header-new-mail-indicator"></div>
+                            </div>
+                        </button>
+                        <button class="header-btn-profile">
+                            <img class="header-bth-profile-photo-img" src="./images/profile-photo.png" alt="profile">
+                            <p class="header-profile-initials">Максим Добжанский</p>
+                        </button>
+                    </div>
+<!--                    popup navbar-->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="menu-list-item">
+                                        <div class="menu-list-item-icon-container">
+                                            <img class='menu-list-item-icon-unselected' src="./images/icon-web-page-home-grey.png" alt="main-page">
+                                            <img class='menu-list-item-icon-active' src="./images/icon-web-page-home-blue.png" alt="main-page">
+                                        </div>
+                                        <p>Главная</p>
+                                    </li>
+                                    <li class="menu-list-item active">
+                                        <div class="menu-list-item-icon-container">
+                                            <img class='menu-list-item-icon-unselected' src="./images/icon-shopping-cart-grey.png" alt="main-page">
+                                            <img class='menu-list-item-icon-active' src="./images/icon-shopping-cart-blue.png" alt="main-page">
+                                        </div>
+                                        <p>Мои магазины</p>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <div class="menu-list-item-icon-container">
+                                            <img class='menu-list-item-icon-unselected' src="./images/icon-megaphone-grey.png" alt="main-page">
+                                            <img class='menu-list-item-icon-active' src="./images/icon-megaphone-blue.png" alt="main-page">
+                                        </div>
+                                        <p>Промоматериалы</p>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <div class="menu-list-item-icon-container">
+                                            <img class='menu-list-item-icon-unselected' src="./images/icon-pie-chart-grey.png" alt="main-page">
+                                            <img class='menu-list-item-icon-active' src="./images/icon-pie-chart-blue.png" alt="main-page">
+                                        </div>
+                                        <p>Статистика</p>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <div class="menu-list-item-icon-container">
+                                            <img class='menu-list-item-icon-unselected' src="./images/icon-wallet-grey.png" alt="main-page">
+                                            <img class='menu-list-item-icon-active' src="./images/icon-wallet-blue.png" alt="main-page">
+                                        </div>
+                                        <p>Баланс</p>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <div class="menu-list-item-icon-container">
+                                            <img class='menu-list-item-icon-unselected' src="./images/icon-profile-grey.png" alt="main-page">
+                                            <img class='menu-list-item-icon-active' src="./images/icon-profile-blue.png" alt="main-page">
+                                        </div>
+                                        <p>Персональные данные</p>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <div class="menu-list-item-icon-container">
+                                            <img class='menu-list-item-icon-unselected' src="./images/icon-information-grey.png" alt="main-page">
+                                            <img class='menu-list-item-icon-active' src="./images/icon-information-blue.png" alt="main-page">
+                                        </div>
+                                        <p>FAQ</p>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <div class="menu-list-item-icon-container">
+                                            <img class='menu-list-item-icon-unselected' src="./images/icon-music-and-multimedia-grey.png" alt="main-page">
+                                            <img class='menu-list-item-icon-active' src="./images/icon-music-and-multimedia-blue.png" alt="main-page">
+                                        </div>
+                                        <p>Техподдержка</p>
+                                    </li>
+                                    <li class="menu-list-item">
+                                        <div class="menu-list-item-icon-container">
+                                            <img class='menu-list-item-icon-unselected' src="./images/icon-logout-grey.png" alt="main-page">
+                                            <img class='menu-list-item-icon-active' src="./images/icon-logout-blue.png" alt="main-page">
+                                        </div>
+                                        <p>Выход</p>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="crumbs">
+                <a class="crumbs-link" href="https://www.work5.ru/">Главная</a>
+                <img class="crumbs-arrow" src="./images/arrow-point-to-right.png" alt="">
+                <a class="crumbs-link" href="https://www.work5.ru/orders">Мои магазины</a>
+            </div>
+            <header class="header">
+                <button type="button" class="header-btn">
+                    <div class="header-btn-mail-container">
+                        <img class="header-btn-mail-img-unselected" src="./images/icon-mail-grey.png" alt="mail">
+                        <img class="header-btn-mail-img-active" src="./images/icon-mail-grey.png" alt="mail">
+                        <div class="header-new-mail-indicator"></div>
+                    </div>
+                </button>
+                <button class="header-btn-profile">
+                    <img src="./images/profile-photo.png" alt="profile">
+                    <p class="header-profile-initials">Максим Добжанский</p>
+                </button>
+            </header>
+            <div class="store-management">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <span style="font-size: 20px; font-weight: 900; margin-right: 11px">+</span><span>Создать свой магазин</span>
+                </button>
+                <h3 class="store-management-heading">Управление магазинами</h3>
+                <div class="store-management-table-container">
+<!--                    <table class="table table-hover store-management-table">-->
+                    <table class="store-management-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">№</th>
+                                <th scope="col">Название</th>
+                                <th scope="col">Адрес</th>
+                                <th scope="col">Действие</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">12345</th>
+                                <td>Дипломная работа</td>
+                                <td>http://www.work5.ru/services</td>
+                                <td>
+                                    <div class="store-management-table-btn-container">
+                                        <button type="button"
+                                                class="btn btn-primary store-management-btn btn-green"
+                                                style="margin-right: 10px"
+                                        >
+                                            <img src="./images/icon-pencil.png" alt="">
+                                            <p>Редактировать</p>
+                                        </button>
+                                        <button type="button" class="btn btn-primary store-management-btn btn-grey">
+                                            <img src="./images/icon-cancel.png" alt="">
+                                            <p>Редактировать</p>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">12345</th>
+                                <td>Дипломная работа</td>
+                                <td>http://www.work5.ru/services</td>
+                                <td>
+                                    <div class="store-management-table-btn-container">
+                                        <button type="button"
+                                                class="btn btn-primary store-management-btn btn-green"
+                                                style="margin-right: 10px"
+                                        >
+                                            <img src="./images/icon-pencil.png" alt="">
+                                            <p>Редактировать</p>
+                                        </button>
+                                        <button type="button" class="btn btn-primary store-management-btn btn-grey">
+                                            <img src="./images/icon-cancel.png" alt="">
+                                            <p>Редактировать</p>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+<!--            mobile store managemnt-->
+
+            <div class="mobile-store-management">
+                <button
+                        style="border: none"
+                        type="button" class="btn btn-primary btn-green"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                    <span style="font-size: 20px; font-weight: 900; margin-right: 11px">+</span><span>Создать свой магазин</span>
+                </button>
+                <h3 class="store-management-heading">Управление магазинами</h3>
+                <ul class="mobile-store-management-schedule">
+                    <li class="mobile-store-management-element">
+                        <div class="mobile-store-management-element-line">
+                            <h5 class="mobile-store-management-element-title">№:</h5>
+                            <p class="mobile-store-management-element-value">12345</p>
+                        </div>
+                        <div class="mobile-store-management-element-line">
+                            <h5 class="mobile-store-management-element-title">Название:</h5>
+                            <p class="mobile-store-management-element-value">Дипломная работа</p>
+                        </div>
+                        <div class="mobile-store-management-element-line">
+                            <h5 class="mobile-store-management-element-title">Адрес:</h5>
+                            <p class="mobile-store-management-element-value">http://www.work5.ru/services</p>
+                        </div>
+                        <div
+                                class="mobile-store-management-element-line"
+                                style="margin-bottom: 15px;"
+                        >
+                            <button type="button"
+                                    class="btn btn-primary store-management-btn btn-green"
+                                    style="margin-right: 10px"
+                            >
+                                <img src="./images/icon-pencil.png" alt="">
+                                <p>Редактировать</p>
+                            </button>
+                            <button type="button" class="btn btn-primary store-management-btn btn-grey">
+                                <img src="./images/icon-cancel.png" alt="">
+                                <p>Редактировать</p>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="mobile-store-management-element">
+                        <div class="mobile-store-management-element-line">
+                            <h5 class="mobile-store-management-element-title">№:</h5>
+                            <p class="mobile-store-management-element-value">12345</p>
+                        </div>
+                        <div class="mobile-store-management-element-line">
+                            <h5 class="mobile-store-management-element-title">Название:</h5>
+                            <p class="mobile-store-management-element-value">Дипломная работа</p>
+                        </div>
+                        <div class="mobile-store-management-element-line">
+                            <h5 class="mobile-store-management-element-title">Адрес:</h5>
+                            <p class="mobile-store-management-element-value">http://www.work5.ru/services</p>
+                        </div>
+                        <div
+                                class="mobile-store-management-element-line"
+                                style="margin-bottom: 15px;"
+                        >
+                            <button type="button"
+                                    class="btn btn-primary store-management-btn btn-green"
+                                    style="margin-right: 10px"
+                            >
+                                <img src="./images/icon-pencil.png" alt="">
+                                <p>Редактировать</p>
+                            </button>
+                            <button type="button" class="btn btn-primary store-management-btn btn-grey">
+                                <img src="./images/icon-cancel.png" alt="">
+                                <p>Редактировать</p>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade modal-create-store-basement" id="staticBackdrop" data-bs-backdrop="false" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<!--            <div class="modal-dialog modal-create-store-box"></div>-->
+        <div class="modal-dialog modal-create-store-box">
+            <div class="modal-create-store-box"
+                 style="top: 0; left: 0"
+            >
+                <div class="modal-content">
+                    <h3 class="modal-title">Создать магазин</h3>
+                    <div class="modal-pattern-block">
+                        <div class="modal-pattern">
+                            <h5 class="modal-pattern-title">Шаблон</h5>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Стандартный
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Темный</a></li>
+                                    <li><a class="dropdown-item" href="#">Новогодний</a></li>
+                                    <li><a class="dropdown-item" href="#">Dracula</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-pattern">
+                            <h5 class="modal-pattern-title">Цветовая схема</h5>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Классическая
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Темная</a></li>
+                                    <li><a class="dropdown-item" href="#">Новогодняя</a></li>
+                                    <li><a class="dropdown-item" href="#">Dracula</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-pattern-example-block">
+                        <div class="modal-pattern">
+                            <h5 class="modal-pattern-title">Домен</h5>
+                            <div class="modal-patter-example-line">
+                                <input type="text" placeholder="Например: ivangrozniy">
+                                <div class="modal-pattern-example-line-domen"><p>.work5.ru</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-attention-block">
+                        <img class="modal-warning-img" src="./images/warning.png" alt="warning">
+                        <div class="modal-warning-text-block">
+                            <p class="modal-warning-text">В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work 5.--> После создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a href="https://www.work5.ru/orders">ссылке</a></p>
+                        </div>
+                    </div>
+                    <div class="modal-btns-block">
+                        <button type="button"
+                                class="btn btn-primary modal-btn btn-grey"
+                                style="margin-right: 10px"
+                        >Отмена</button>
+                        <button type="button" class="btn btn-primary modal-btn btn-green">Создать</button>
+                    </div>
+                    <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
